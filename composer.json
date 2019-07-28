@@ -1,0 +1,35 @@
+{
+    "name": "ngdot/contao-changenewsmore",
+    "description": "This extension makes it possible to replace 'Read more ...' with an individual text. Works for all forwarding destinations!",
+    "keywords": ["contao", "news"],
+    "type": "contao-bundle",
+    "homepage": "https://nicolas-goerlach.de",
+    "license": "LGPL-3.0-or-later",
+    "authors": [{
+        "name": "Nicolas Görlach",
+        "homepage": "https://nicolas-goerlach.de",
+        "email": "info@nicolas-goerlach.de",
+        "role": "Developer"
+    }],
+    "support": {
+        "email": "info@nicolas-goerlach.de",
+        "issues": "https://github.com/ngdot/contao-changenewsmore/issues",
+        "source": "https://github.com/ngdot/contao-changenewsmore",
+        "forum": "https://community.contao.org/de"
+    },
+    "require": {
+        "contao/core-bundle": "~4.4",
+        "contao/news-bundle": "~4.4"
+    },
+    "require-dev": {
+        "contao/manager-plugin": "^2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "ContaoChangeNewsMoreBundle\\": "src/"
+        }
+    },
+    "extra": {
+        "contao-manager-plugin": "ContaoChangeNewsMoreBundle\\ContaoManager\\Plugin"
+    }
+}
