@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of the ContaoChangeNewsMoreBundle Bundle.
+ * This file is part of the ContaoChangeNewsMore Bundle.
  *
  * (c) Nicolas Görlach <https://github.com/ngdot>
  *
@@ -9,9 +9,9 @@
  * file that was distributed with this source code.
  */
 
-namespace ContaoChangeNewsMoreBundleBundle\ContaoManager;
+namespace ContaoChangeNewsMoreBundle\ContaoManager;
 
-use ContaoChangeNewsMoreBundleBundle\ContaoChangeNewsMoreBundleBundle;
+use ContaoChangeNewsMoreBundle\ContaoChangeNewsMoreBundle;
 use Contao\CoreBundle\ContaoCoreBundle;
 use Contao\ManagerPlugin\Bundle\BundlePluginInterface;
 use Contao\ManagerPlugin\Bundle\Config\BundleConfig;
@@ -31,7 +31,7 @@ class Plugin implements BundlePluginInterface
     public function getBundles(ParserInterface $parser)
     {
         return [
-            BundleConfig::create(ContaoChangeNewsMoreBundleBundle::class)
+            BundleConfig::create(ContaoChangeNewsMoreBundle::class)
                 ->setLoadAfter([ContaoCoreBundle::class])
         ];
     }
