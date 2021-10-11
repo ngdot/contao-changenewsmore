@@ -1,0 +1,3 @@
+services:
+    ContaoChangeNewsMoreBundle\EventListener\ParseArticlesListener:
+        public: true
