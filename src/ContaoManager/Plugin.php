@@ -16,7 +16,7 @@ use Contao\CoreBundle\ContaoCoreBundle;
 use Contao\ManagerPlugin\Bundle\BundlePluginInterface;
 use Contao\ManagerPlugin\Bundle\Config\BundleConfig;
 use Contao\ManagerPlugin\Bundle\Parser\ParserInterface;
-
+use Contao\NewsBundle\ContaoNewsBundle;
 
 /**
  * Plugin for the Contao Manager.
@@ -32,7 +32,7 @@ class Plugin implements BundlePluginInterface
     {
         return [
             BundleConfig::create(ContaoChangeNewsMoreBundle::class)
-                ->setLoadAfter([ContaoCoreBundle::class])
+                ->setLoadAfter([ContaoCoreBundle::class, ContaoNewsBundle::class])
         ];
     }
 }
