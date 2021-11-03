@@ -18,8 +18,12 @@
         "forum": "https://community.contao.org/de"
     },
     "require": {
+        "php": "^7.1",
         "contao/core-bundle": "~4.4",
-        "contao/news-bundle": "~4.4"
+        "contao/news-bundle": "~4.4",
+        "symfony/config": "^3.4 || ^4.4 || ^5.1",
+        "symfony/dependency-injection": "^3.4 || ^4.4 || ^5.1",
+        "symfony/http-kernel": "^3.4 || ^4.4 || ^5.1"
     },
     "require-dev": {
         "contao/manager-plugin": "^2.0"
